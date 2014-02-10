@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+
+
+{% block head %}
+<title>Dúvida Enviada! - Imposto de Renda na Bolsa</title>
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+{% endblock %}
+
+
+{% block content %}
+
+<div class="marketing">
+<br/>
+<h2>Obrigado!</h2>
+<p>Sua dúvida foi recebida com sucesso e será respondida em breve!</p>
+<br/>
+<p>Já pensou poder tirar suas dúvidas sempre que precisar?</p>
+<p>Com o guia do Imposto de Renda na Bolsa você pode! Compre sua versão completa aqui:</p>
+<a href="{% url "home" %}" class="btn btn-info btn-large" target="_blank">Comprar Guia Completo!</a>
+</div>
+<br/>
+<br/>
+<br/>
+<br/>
+<div class="marketing">
+<h4> Dúvidas? <a href="mailto:impostoderendanabolsa@gmail.com" target="_blank" onclick="_gaq.push(['_trackEvent', 'Email', 'Contato', 'Capitulo 1']);">Envie um email para nós!</a></h4>
+
+
+</div>
+
+
+{% endblock %}

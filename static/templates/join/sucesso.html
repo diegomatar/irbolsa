@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Sucesso!</title>
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+<script type="text/javascript">
+var fb_param = {};
+fb_param.pixel_id = '6015694794673';
+fb_param.value = '0.00';
+fb_param.currency = 'BRL';
+(function(){
+  var fpw = document.createElement('script');
+  fpw.async = true;
+  fpw.src = '//connect.facebook.net/en_US/fp.js';
+  var ref = document.getElementsByTagName('script')[0];
+  ref.parentNode.insertBefore(fpw, ref);
+})();
+</script>
+<noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/offsite_event.php?id=6015694794673&amp;value=0&amp;currency=BRL" /></noscript>
+{% endblock %}
+
+
+{% block content %}
+
+<div class="marketing">
+<br/>
+<h1>Obrigado por sua compra!</h1>
+<br/>
+<h4>Clique no botão abaixo para iniciar o download do guia completo:</h4>
+<br/>
+ <a href="https://www.dropbox.com/s/mjx8e2zaejqobh2/Imposto_de_Renda_na_Bolsa.pdf" class="btn btn-success btn-large" onclick="_gaq.push(['_trackEvent', 'CTA', 'Download', 'Sucesso']);">Iniciar Download</a>
+</div>
+<br/>
+<br/>
+<p>Obs: O arquivo é grande (10 MB), o download pode levar alguns minutos.</p>
+<br/>
+<br/>
+<div class="marketing">
+<h4> Dúvidas? <a href="mailto:impostoderendanabolsa@gmail.com" target="_blank" onclick="_gaq.push(['_trackEvent', 'Email', 'Contato', 'Sucesso']);">Envie um email para nós!</a></h4>
+</div>
+
+{% endblock %}

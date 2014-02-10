@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Sucesso!</title>
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+<script type="text/javascript">
+var fb_param = {};
+fb_param.pixel_id = '6015694794673';
+fb_param.value = '0.00';
+fb_param.currency = 'BRL';
+(function(){
+  var fpw = document.createElement('script');
+  fpw.async = true;
+  fpw.src = '//connect.facebook.net/en_US/fp.js';
+  var ref = document.getElementsByTagName('script')[0];
+  ref.parentNode.insertBefore(fpw, ref);
+})();
+</script>
+<noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/offsite_event.php?id=6015694794673&amp;value=0&amp;currency=BRL" /></noscript>
+{% endblock %}
+
+
+{% block content %}
+
+<div class="marketing">
+<br/>
+<h2>Obrigado por comprar na pré venda!</h2>
+<p><strong>Você receberá o Guia do Imposto de Renda na Bolsa completo em seu email no dia 20/12/13.</strong></p>
+<br/>
+<p>Enquanto isso, <a href="{% url "obrigado" %}" onclick="_gaq.push(['_trackEvent', 'CTA', 'Baixe Capitulo 1', 'Sucesso']);">faça o download e leia o 1º capítulo aqui</a>.</p>
+</div>
+<br/>
+<br/>
+<br/>
+<br/>
+<div class="marketing">
+<h4> Dúvidas? <a href="mailto:impostoderendanabolsa@gmail.com" target="_blank" onclick="_gaq.push(['_trackEvent', 'Email', 'Contato', 'Sucesso']);">Envie um email para nós!</a></h4>
+</div>
+
+{% endblock %}

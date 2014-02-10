@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Oferta! 50% off!!</title>
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+<script type="text/javascript">
+var fb_param = {};
+fb_param.pixel_id = '6015694794673';
+fb_param.value = '0.00';
+fb_param.currency = 'BRL';
+(function(){
+  var fpw = document.createElement('script');
+  fpw.async = true;
+  fpw.src = '//connect.facebook.net/en_US/fp.js';
+  var ref = document.getElementsByTagName('script')[0];
+  ref.parentNode.insertBefore(fpw, ref);
+})();
+</script>
+<noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/offsite_event.php?id=6015694794673&amp;value=0&amp;currency=BRL" /></noscript>
+{% endblock %}
+
+
+{% block content %}
+
+
+<div class="row-fluid">
+<br/>
+<div class="span1"></div>
+<div class="span5">
+<h1>50% de Desconto</h1>
+<br/>
+<h3> - Oferta Encerrada - </h3>
+
+<h3>A quantidade de itens disponíveis nesta promoção foi atingida.</h3>
+<br/>
+ 
+ 
+ <p style="
+    text-decoration: line-through;
+"></p>
+ 
+
+<br/>
+<br/>
+<br/>
+<br/>
+</div>
+<div class="span5">
+<img src="{{STATIC_URL}}img/imposto-de-renda-na-bolsa-de-valores.jpg" alt="imposto de renda na bolsa de valores" class="img-rounded">
+</div>
+<div class="span1"></div>
+</div>
+
+
+{% endblock %}

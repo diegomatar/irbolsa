@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>{{duvida}} - IR na Bolsa</title>
+<meta name="description" content={{duvida.descricao}}>
+<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+<link rel="canonical" href="http://impostoderendanabolsa.com.br" />
+{% endblock %}
+
+
+{% block content %}
+
+
+<div class="align-left">
+<h1>{{ duvida }}</h1>
+<br/>
+<div class="row-fluid">
+<div class="span3"><p class="texto-secundario">{{ duvida.data }}</p></div>
+<div class="span3"><p>Categoria: {{ duvida.categorias }}</p></div>
+<div class="span3"><p>Enviada por: {{ duvida.autor }}</p></div>
+</div>
+<hr/>
+
+</div>
+
+<div class="container-fluid">
+  <div class="row-fluid">
+    <div class="span8 align-left">
+      <!--Body content-->
+<p><i>{{ duvida.pergunta }}</i></p>
+<br/>
+<h4>Resposta:</h4>
+<p>{{ duvida.resposta }}</p>
+<p>Autor da Resposta: <a href="https://plus.google.com/+DiegoWawrzeniak/?rel=author">Diego Wawrzeniak</a></p>
+      
+    </div>
+    <div class="span4 align-left">
+<h3>Perguntas Relacionadas</h3>
+<br/>
+<p><strong><a href="#">Como faço para pagar menos imposto?</a></strong></p>
+<br/>
+<p><strong><a href="#">Fui multado pela Receita federal, e agora??</a></strong></p>
+<br/>
+<p><strong><a href="#">Como posso saber se deve pagar IR na Bolsa?</a></strong></p>
+
+      
+    </div>
+  </div>
+</div>
+
+
+<hr>
+
+<div class="row-fluid">
+    <div class="align-left">
+        <h3>Ainda não encontrou sua resposta?</h3>
+        <p>Envie suas <a href="{% url "duvidas" %}">dúvidas sobre Imposto de Renda na Bolsa</a> que nós vamos responder!</p>
+        <br/>
+        <a href="{% url "enviar_duvida" %}" class='btn btn-success btn-large'>Enviar Nova Dúvida</a>
+    </div>
+</div>
+
+
+{% endblock %}

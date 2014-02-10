@@ -1,0 +1,350 @@
+{% extends 'base.html' %}
+
+
+{% block head %}
+<title>Imposto de Renda na Bolsa de Valores - Guia Completo</title>
+<meta name="description" content="Ebook completo para você calcular e declarar seu imposto de renda em ações e na bolsa de valores. Faça o downlod aqui!">
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+<link rel="canonical" href="http://impostoderendanabolsa.com.br" />
+{% endblock %}
+
+
+{% block jumbotron %}
+
+<div class="jumbotron masthead">
+  <div class="container">
+    <div class='row'>
+        <div class='span7 pull-left'>
+    <h1>Imposto de Renda na Bolsa</h1>
+    <p class="text-jumbo">Guia completo para você calcular e declarar seu IR em ações e outros ativos da BM&F Bovespa em 2014!</p>
+    <p>
+      <a href="#comprar" class="btn btn-primary btn-large" onclick="_gaq.push(['_trackEvent', 'CTA', 'Compre Aqui', 'Home Principal']);">Compre o Seu Aqui</a>
+      <a href="#capitulo1" class="btn btn-large" style="color: #838383;" onclick="_gaq.push(['_trackEvent', 'CTA', 'Baixe Capitulo 1', 'Home Principal']);">Baixe o Capítulo 1</a>
+    </p>
+    </div>
+    <div class='pull-right'><img src="{{STATIC_URL}}img/imposto-de-renda-na-bolsa-de-valores.jpg" alt="imposto de renda na bolsa de valores" class="img-rounded"></div>
+    </div>
+  </div>
+</div>
+
+
+<a name='capitulo1'></a>
+{% endblock %}
+
+{% block content %}
+
+
+<h1>Baixe o Capítulo 1 (grátis):</h1>
+<br/>
+<div class="row">
+<div class="span6">
+<h4>Complete seus dados para iniciar o download:</h4>
+<form action='' method='POST'> {% csrf_token %}
+{{ form.as_p }}
+<input class='btn btn-info btn-large' type='submit' value='Baixar 1º Capítulo' onclick="_gaq.push(['_trackEvent', 'CTA', 'Baixe Capitulo 1', 'Form Submit']);"/>
+</form>
+</div>
+<div class="span6" style="text-align: left;">
+    <br/>
+    <h4>Aprenda neste capítulo:</h4>
+    <br/>
+    <p>   <i class="icon-ok"></i>   Se você deve se preocupar com o IR na bolsa.</p>
+    <p>   <i class="icon-ok"></i>   O que a Receita Federal sabe sobre você.</p>
+    <p>   <i class="icon-ok"></i>   Diferença entre declarar e pagar o Imposto de Renda.</p>
+    <p>   <i class="icon-ok"></i>   Índice de conteúdo completo deste guia.</p>
+</div>
+</div>
+
+
+
+<hr class="soften">
+
+<h2>Passo a passo para ficar tranquilo com seu IR na bolsa de valores.</h2>
+<p class="marketing-byline">São <strong>13 capítulos</strong> e mais de 100 páginas com absolutamente tudo o que você precisa saber:</p>
+<div class="row-fluid">
+<ul class="thumbnails">
+            <li class="span3">
+            <img class="img-rounded" src="{{STATIC_URL}}img/informacoes-imposto-renda.png" alt="informacoes imposto de renda">
+           <div class="caption">
+                    <h3>1. Encontre Suas Informações</h3>
+                    <p>Saiba o que será necessário para apurar seu IR mensal e onde encontrar tudo isso.</p>
+                    </div>
+        </li>
+        <li class="span3">
+            <img class="img-rounded" src="{{STATIC_URL}}img/calculo-imposto-renda.png" alt="calculo imposto de renda">
+          <div class="caption">
+                    <br/>
+                    <h3>2. Faça o Cálculo</h3>
+                    <br/>
+                    <p>Tudo para você calcular o imposto de renda de acordo com o tipo de operação: ações, daytrade, opções e mais!</p>
+                  </div>
+        </li>
+        <li class="span3">
+            <img class="img-rounded" src="{{STATIC_URL}}img/pagar-imposto-renda.png" alt="pagar imposto de renda">
+          <div class="caption">
+                    <br/>
+                    <h3>3. Recolha Seu IR</h3>
+                    <br/>
+                    <p>Onde e como gerar a DARF para pagar seu imposto de renda, mesmo que esteja atrasado.</p>
+                  </div>
+        </li>
+        <li class="span3">
+            <img class="img-rounded" src="{{STATIC_URL}}img/imposto-renda-irpf.png" alt="irpf imposto de renda">
+          <div class="caption">
+                    <h3>4. Preencha Sua Declaração</h3>
+                    <p>Tutorial com o passo a passo de como declarar ações e outros investimentos no imposto de renda.</p>
+                  </div>
+        </li>
+      </ul>
+     </div>
+    <a href="#comprar" class="btn btn-primary btn-large" onclick="_gaq.push(['_trackEvent', 'CTA', 'Compre Aqui', 'Home 2']);">Compre Aqui!</a>
+
+    
+<hr class="soften">
+
+<h2>O que estão falando sobre:</h2>
+</br>
+</br>
+<div class="row-fluid">
+<ul class="thumbnails">
+            <li class="span3">
+            <img class="img-circle" src="{{STATIC_URL}}img/samy_dana.jpg" alt="informacoes imposto de renda">
+           <div class="caption">
+                <br/>
+                <p><i>"O guia mais completo e fácil de usar já publicado sobre o tema."</i></p>
+                <h5>Samy Dana, <i>Globo News</i></h5>        
+            </div>
+        </li>
+        <li class="span3">
+            <img class="img-circle" src="{{STATIC_URL}}img/conrado_navarro.jpg" alt="calculo imposto de renda">
+          <div class="caption">
+                    <br/>
+                    <p><i>"Se você quer investir com segurança e sem ser perseguido pelo Leão, precisa ler este Guia!"</i></p>
+                <h5>Conrado Navarro, <i>Dinheirama.com</i></h5>
+                  </div>
+        </li>
+        <li class="span3">
+            <img class="img-circle" src="{{STATIC_URL}}img/daniel_marques.jpg" alt="pagar imposto de renda">
+          <div class="caption">
+                    <br/>
+                    <p><i>"Muito útil, fácil de enteder e com gráficos explicativos muito bem feitos."</i></p>
+                    <h5><i>Daniel Marques, Ágora Corretora</i></h5>
+                  </div>
+        </li>
+        <li class="span3">
+            <img class="img-circle" src="{{STATIC_URL}}img/ir_acoes.jpg" alt="irpf imposto de renda">
+          <div class="caption">
+                    <br/>
+                    <p><i>"Extremamente completo. Vai muito além do IR em ações, abordando todos os ativos da bolsa de valores."</i></p>
+                    <h5>Tom Negril, <i>Trader Profissional</i></h5>
+                  </div>
+        </li>
+      </ul>
+     </div>
+    <a href="#comprar" class="btn btn-primary btn-large" onclick="_gaq.push(['_trackEvent', 'CTA', 'Compre Aqui', 'Home 2']);">Compre Aqui!</a>
+    
+<hr class="soften">
+    
+    <h2>100% feito para ajudar você:</h2>
+    <p class="marketing-byline">Nunca mais pague imposto de renda a mais ou a menos e fique tranquilo com o Leão.</p>
+
+    <div class="row-fluid">
+      <div class="span4">
+        <img class="marketing-img img-polaroid" src="{{STATIC_URL}}img/diego-wawrzeniak.jpg" alt="diego wawrzeniak">
+        <h3>Criado por um investidor.</h3>
+        <p>Feito por <a href="https://plus.google.com/+DiegoWawrzeniak/?rel=author">Diego Wawrzeniak</a> co-fundador do <a href="http://www.bussoladoinvestidor.com.br">Bússola do Investidor</a>, este livro virtual é resultado de anos de experiência no assunto.</p>
+      </div>
+      <div class="span4">
+       <img class="marketing-img img-polaroid" src="{{STATIC_URL}}img/ir-acoes.jpg" alt="ir acoes">
+        <h3>Feito para todos.</h3>
+        <p>Para todos os perfis de investidores. Desde de daytraders experientes até quem vai declarar o IR em ações pela primeira vez.</p>
+      </div>
+      <div class="span4">
+        <img class="marketing-img img-polaroid" src="{{STATIC_URL}}img/imposto-de-renda-em-acoes.png" alt="imposto de renda em acoes">
+        <h3>Formato ebook.</h3>
+        <p>Tenha este guia sempre a mão! Disponível no formato PDF e compatível com todos os computadores, tablets e smartphones.</p>
+      </div>
+    </div>
+    <br/>
+    
+    <a href="#comprar" class="btn btn-primary btn-large" onclick="_gaq.push(['_trackEvent', 'CTA', 'Compre Aqui', 'Home 4']);">Compre Aqui!</a>
+        
+
+
+<hr class="soften">
+    
+<h2>O que você vai aprender neste guia:</h2>
+</br>
+
+<div class="row-fluid" style="text-align: left;">
+<ul class="thumbnails">
+            <li class="span4">
+                    <p><strong>1. O investidor e o Leão</strong></p>
+                    <ul class="textoclaro">
+                        <li>1.1 Como este livro vai ajudar você</li>
+                        <li>1.2 O que é IR na bolsa de valores?</li>
+                        <li>1.3 Eu devo me importar com isso?</li>
+                        <li>1.4 Diferença entre “declarar” e “pagar”</li>
+                        <li>1.5 O que a Receita Federal sabe?</li>
+                    </ul>
+                    </br> 
+                    <p><strong>2. Renda Fixa ou Renda Variável</strong></p>
+                    <ul class="textoclaro">
+                        <li>2.1. Qual a diferença?</li>
+                        <li>2.2. IR na Renda Fixa</li>
+                        <li>2.3. IR na Renda Variável</li>
+                    </ul>
+                    </br>                    
+                    <p><strong>3. Reúna Suas Informações</strong></p>
+                    <ul class="textoclaro">
+                        <li>3.1. A Nota de Corretagem</li>
+                        <li>3.2. Preço de Execução</li>
+                        <li>3.3. Taxa de Corretagem</li>
+                        <li>3.4. Emolumentos</li>
+                        <li>3.5. IRRF</li>
+                    </ul>
+                    </br>
+                    <p><strong>4. Separe Suas Operações</strong></p>
+                    <ul class="textoclaro">
+                        <li>4.1 Operação Normal Vs. Daytrade</li>
+                        <li>4.2 Operações Normais</li>
+                        <li>4.3 Operações Daytrade</li>
+                        <li>4.4 Execução Vs. Liquidação</li>
+                    </ul>
+                    </br>
+                    <p><strong>5. IR em Operações Normais com Ações</strong></p>
+                    <ul class="textoclaro">
+                        <li>5.1 Encontre o Preço Médio</li>
+                        <li>5.2 Encontre o Resultado</li>
+                        <li>5.3 Casos Especiais</li>
+                        <li>5.4 Isenção de IR em Ações</li>
+                    </ul>
+            </li >
+            
+            <li class="span4">
+                    </br>
+                   <ul class="textoclaro">
+                      <li>5.5 Compensação de Prejuízos</li>
+                      <li>5.6 Compensando o IRRF</li>
+                      <li>5.7 Resumo do Mercado a Vista</li>
+                     </ul>
+                    </br>                    
+                    <p><strong>6. IR no Mercado de Opções</strong></p>
+                    <ul class="textoclaro">
+                        <li>6.1 Opção Não Foi Exercida</li>
+                        <li>6.2 Opção Foi Exercida</li>
+                        <li>6.3 IRRF em Opções</li>
+                        <li>6.4 Resumo do Mercado de Opções</li>
+                    </ul>
+                    </br>
+                    <p><strong>7. IR no Mercado à Termo</strong></p>
+                     <ul class="textoclaro">
+                        <li>7.1 IR Para o Comprador</li>
+	                <li>7.2 IR Para o Vendedor</li>
+	                <li>7.3 Ganho em Mais de Uma Operação</li>
+	                <li>7.4 IRRF em Operações a Termo</li>
+	                <li>7.5 Resumo Mercado à Termo</li>
+                     </ul>
+                    </br>
+                    <p><strong>8. IR no Mercado Futuro</strong></p>
+                    <ul class="textoclaro">
+	                <li>8.1 Calculando IR no Mercado Futuro</li>
+	                <li>8.2 IRRF no Mercado Futuro</li>
+	                <li>8.3 Resumo Mercado Futuro</li>
+                    </ul>
+                    </br>
+                    <p><strong>9. IR em Operações Daytrade</strong></p>
+                    <ul class="textoclaro">
+	                <li>9.1 Preço Médio em Daytrade</li>
+	                <li>9.2 Alíquota de IR em Daytrade</li>
+	                <li>9.3  Isenção no Daytrade</li>
+	                <li>9.4 Compensando Prejuízos Daytrade</li>
+	                <li>9.5 IRRF no Daytrade</li>
+	                <li>9.6 Compensando IRRF no Daytrade</li>
+	                <li>9.7 Resumo Operações Daytrade</li>
+                    </ul>
+             </li>
+        
+        <li class="span4">
+                    <p><strong>10. IR em Outros Investimentos</strong></p>
+                     <ul class="textoclaro">
+                        <li>10.1. Quotas de Fundos</li>
+	                <li>10.2. Aluguel de Ações</li>
+	                <li>10.3. Fundos imobiliários</li>
+	                <li>10.4 Resumo Fundos Imobiliários</li>
+                    </ul>
+                    </br>
+                    <p><strong>11. Pagando o IR Mensal</strong></p>
+                     <ul class="textoclaro">
+	                <li>11.1 Pagando Sua DARF no Prazo</li>
+	                <li>11.2 Pagando Sua DARF em Atraso</li>
+                    </ul>
+                    </br>
+                    <p><strong>12. Preenchendo a Declaração Anual</strong></p>
+                    <ul class="textoclaro">
+ 	                <li>12.1 Dividendos</li>
+ 	                <li>12.2 Juros Sobre Capital Próprio</li>
+ 	                <li>12.3 Lucro Isento</li>
+ 	                <li>12.4 Lucro Tributável</li>
+ 	                <li>12.5 Prejuízos Acumulados</li>
+ 	                <li>12.6 Saldo Investido em Ações</li>
+ 	                <li>12.7 Doações e Heranças</li>
+	                <li>12.8 Fundos de Investimento Imobiliário</li>
+ 	                <li>12.9 Aluguel de Ações</li>
+	                <li>12.10 Vendas Descobertas</li>
+                    </ul>
+                    </br>
+                    <p><strong>13. Notas Finais</strong></p>
+                    </br>
+                    <p><strong>Anexo: Legislação IRPF</strong></p>
+
+
+                  
+        </li>
+      </ul>
+     </div>
+
+<a href="#comprar" class="btn btn-primary btn-large" onclick="_gaq.push(['_trackEvent', 'CTA', 'Compre Aqui', 'Home 3']);">Compre Aqui!</a>
+
+
+<a name='comprar'></a>
+<hr class="soften">
+
+<h1>Receba seu guia agora!</h1>
+<br/>
+
+<h4>Evitando uma multa da Receita Federal você já recupera seu investimento:</h4>
+<br/>
+<a href="https://www.hotmart.net.br/order/checkout/pay.html?order=D1471172D&cid=357795#" class='btn btn-success btn-large' target="new">Comprar Agora Por R$ 79,90</a>
+<br/>
+<br/>
+<img src="{{STATIC_URL}}img/paypal.jpg" alt="PayPal - A maneira mais facil e segura de efetuar pagamentos online!">
+<img src="{{STATIC_URL}}img/site_seguro.png" alt="Site Seguro">
+
+<hr class="soften">
+    
+<div class="row-fluid">
+    <h4><i>Dúvidas Frequentes:</i></h4>
+  
+    <div class="span2">
+    </div>
+    <div class="span4 align-left">
+        <h5>Em qual formato o Guia está disponível?</h5>
+        <p class="texto-secundario">A versão disponível é digital (formato PDF) em alta resolução, que pode ser impressa em gráficas sempre que você desejar.</p>
+        <br/>
+        <h5>Posso pagar com boleto bancário?</h5>
+        <p class="texto-secundario">Sim. Para pagar com boleto bancário você deve <a href="mailto:impostoderendanabolsa@gmail.com">enviar um email</a> para nós informando seu nome e telefone.</p>
+    </div>
+    <div class="span4 align-left">
+        <h5>O guia está atualizado?</h5>
+        <p class="texto-secundario">Sim. Quem comprar o guia tem acesso a todas as versões futuras com as atualizações de novas regras do IR na bolsa de valores.</p>
+        <br/>
+        <h5>É seguro comprar por este site?</h5>
+        <p class="texto-secundario">Sim. Toda a transação é realizada no site seguro do PayPal. Nós não temos nenhum acesso aos seus dados de cartão de crédito.</p>
+    </div>
+    <div class="span2">
+    </div>
+</div>
+
+
+{% endblock %}   

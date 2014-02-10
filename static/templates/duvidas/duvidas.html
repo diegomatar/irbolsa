@@ -1,0 +1,81 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Dúvidas Sobre IR - Imposto de Renda na Bolsa</title>
+<meta name="description" content="Tire suas dúvidas sobre o IR na bolsa de valores, ações e outros ativos negociados na Bovespa.">
+<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+<link rel="canonical" href="http://impostoderendanabolsa.com.br" />
+{% endblock %}
+
+
+
+{% block jumbotron %}
+ <div class="jumbotron subhead">
+  <div class="container">
+    </br>
+    <div class='row'>
+     <div class='span12 align-left'>
+     <h1>Dúvidas Sobre IR</h1>
+      
+      <div class="row">
+       <div class="span8">
+       <p class="lead">Encontre respostas para suas perguntas sobre o <strong>Imposto de Renda</strong> em ações e outros ativos da BM&FBovespa.</p>
+       </div>
+        <div class="span4">
+        <a href="#pesquisar_duvidas" class="btn btn-success btn-large">Pesquisar Respostas</a>
+        <a href="{% url "enviar_duvida" %}" class="btn btn btn-large" style="color: #838383;">Enviar Dúvida</a>
+        </div>
+        </div>
+      </br>
+     </div>      
+  </div>
+ </div>
+</div>
+ 
+ 
+ 
+{% endblock %}
+
+
+{% block content %}
+</br>
+</br>
+</br>
+
+
+   
+<div class="container-fluid">
+
+
+{% for duvida in duvidas %}
+
+<a name='pesquisar_duvidas'></a>
+
+  <div class="row-fluid">
+   
+    <div class="span2">
+     <!--Sidebar content-->
+     <h3>{{ duvida.categorias }}</h3>
+    </div>
+      
+    <div class='span10 align-left'>
+     <!--Body content-->
+     <h4><a href='{% url "duvidas" %}{{ duvida.url }}'>{{ duvida }}</a></h4>
+     <p class="texto-secundario">{{ duvida.data }}</p>
+     <p>{{ duvida.pergunta|truncatewords:30 }}</p>
+     <p><a href='{% url "duvidas" %}{{ duvida.url }}'>Ver Resposta...</a></p>
+    </div>
+  </div>
+  <hr/>
+ 
+ 
+
+{% endfor %}
+
+  </div>
+</div>
+
+
+
+
+{% endblock %}

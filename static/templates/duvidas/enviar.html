@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Enviar Nova Dúvida - Imposto de Renda na Bolsa</title>
+<meta name="description" content="Envie aqui suas dúvidas sobre o Imposto de Renda na Bolsa de Valores e aguarde pela resposta.">
+<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+<link rel="canonical" href="http://impostoderendanabolsa.com.br/duvidas/enviar_duvida" />
+{% endblock %}
+
+
+{% block content %}
+
+<h1>Enviar nova dúvida:</h1>
+<br/>
+<div class="row">
+
+<div class="span6">
+    <br/>
+    <h4>Aprenda neste capítulo:</h4>
+    <br/>
+    <p>   <i class="icon-ok"></i>   Se você deve se preocupar com o IR na bolsa.</p>
+    <p>   <i class="icon-ok"></i>   O que a Receita Federal sabe sobre você.</p>
+    <p>   <i class="icon-ok"></i>   Difereça entre declarar e pagar o Imposto de Renda.</p>
+    <p>   <i class="icon-ok"></i>   Índice de conteúdo completo deste guia.</p>
+</div>
+<div class="span6 style="text-align: left;">
+<h4>Complete seus dados para iniciar o download:</h4>
+<form action='' method='POST'> {% csrf_token %}
+{{ form.as_p }}
+<input class='btn btn-success btn-large' type='submit' value='Enviar Dúvida'/>
+</form>
+</div>
+</div>
+
+{% endblock %}

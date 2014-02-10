@@ -1,0 +1,170 @@
+{% extends 'base.html' %}
+
+
+{% block head %}
+<title>Imposto de Renda na Bolsa de Valores - Guia Completo</title>
+<meta name="description" content="Ebook completo para você calcular e declarar seu imposto de renda em ações e na bolsa de valores. Faça o downlod aqui!">
+<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+<link rel="canonical" href="http://impostoderendanabolsa.com.br" />
+{% endblock %}
+
+
+{% block jumbotron %}
+
+<div class="jumbotron masthead">
+  <div class="container">
+    <div class='row'>
+        <div class='span7 pull-left'>
+    <h1>Imposto de Renda na Bolsa</h1>
+    <p>Guia completo para você calcular e declarar seu IR em ações e outros ativos da BM&F Bovespa!</p>
+    <p>
+      <a href="#comprar" class="btn btn-primary btn-large" onclick="_gaq.push(['_trackEvent', 'CTA', 'Compre Aqui', 'Home Principal']);">Compre o Seu Aqui</a>
+      <a href="#capitulo1" class="btn btn-large" style="color: #838383;" onclick="_gaq.push(['_trackEvent', 'CTA', 'Baixe Capitulo 1', 'Home Principal']);">Baixe o 1º Capítulo</a>
+    </p>
+    </div>
+    <div class='pull-right'><img src="{{STATIC_URL}}img/imposto-de-renda-na-bolsa-de-valores.jpg" alt="imposto de renda na bolsa de valores" class="img-rounded"></div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
+
+{% block content %}
+
+
+<div class="alert alert-success">
+<p><strong>Promoção de Pré Venda - 70% de desconto!</strong></p>
+<p>Economize R$ 50  -  de R$ 69 por R$ 19:</p>
+<a href="#comprar" class="btn btn-success" onclick="_gaq.push(['_trackEvent', 'CTA', 'Compre Aqui', 'Alerta Pre Venda']);">Comprar Agora!</a>
+<br/>
+</div>
+
+<a name='capitulo1'></a>
+<hr class="soften">    
+<h1>Leia o 1º capítulo - grátis!</h1>
+<br/>
+<div class="row">
+<div class="span6">
+<h4>Complete seus dados para iniciar o download:</h4>
+<form action='' method='POST'> {% csrf_token %}
+{{ form.as_p }}
+<input class='btn btn-info btn-large' type='submit' value='Baixar 1º Capítulo' onclick="_gaq.push(['_trackEvent', 'CTA', 'Baixe Capitulo 1', 'Form Submit']);"/>
+</form>
+</div>
+<div class="span6" style="text-align: left;">
+    <br/>
+    <h4>Conteúdo deste capítulo:</h4>
+    <br/>
+    <p>   <i class="icon-ok"></i>   Saiba se você deve se preocupar com o IR na bolsa.</p>
+    <p>   <i class="icon-ok"></i>   Descubra o que a Receita Federal sabe sobre seus investimentos.</p>
+    <p>   <i class="icon-ok"></i>   Entenda a difereça entre declarar e pagar o Imposto de Renda.</p>
+    <p>   <i class="icon-ok"></i>   Confira o índice do conteúdo completo deste ebook.</p>
+</div>
+</div>
+
+
+
+<hr class="soften">
+
+<h2>Todos os passos para ficar tranquilo com seu IR na bolsa de valores.</h2>
+<p class="marketing-byline">São 12 capítulos e mais de 100 páginas com absolutamente tudo o que você precisa saber:</p>
+<div class="row-fluid">
+<ul class="thumbnails">
+<li class="span3">
+<img class="img-rounded" src="{{STATIC_URL}}img/informacoes-imposto-renda.png" alt="informacoes imposto de renda">
+<div class="caption">
+<h3>1. Encontre Suas Informações</h3>
+<p>Saiba o que será necessário para apurar seu IR mensal e onde encontrar tudo isso.</p>
+</div>
+        </li>
+        <li class="span3">
+            <img class="img-rounded" src="{{STATIC_URL}}img/calculo-imposto-renda.png" alt="calculo imposto de renda">
+          <div class="caption">
+                    <br/>
+                    <h3>2. Faça o Cálculo</h3>
+                    <br/>
+                    <p>Tudo para você calcular o imposto de renda de acordo com o tipo de operação: ações, daytrade, opções e mais!</p>
+                  </div>
+        </li>
+        <li class="span3">
+            <img class="img-rounded" src="{{STATIC_URL}}img/pagar-imposto-renda.png" alt="pagar imposto de renda">
+          <div class="caption">
+                    <br/>
+                    <h3>3. Recolha Seu IR</h3>
+                    <br/>
+                    <p>Onde e como gerar a DARF para pagar seu imposto de renda, mesmo que esteja atrasado.</p>
+                  </div>
+        </li>
+        <li class="span3">
+            <img class="img-rounded" src="{{STATIC_URL}}img/imposto-renda-irpf.png" alt="irpf imposto de renda">
+          <div class="caption">
+                    <h3>4. Preencha Sua Declaração</h3>
+                    <p>Tutorial com o passo a passo de como declarar ações e outros investimentos no imposto de renda.</p>
+                  </div>
+        </li>
+      </ul>
+     </div>
+    <a href="#comprar" class="btn btn-primary btn-large" onclick="_gaq.push(['_trackEvent', 'CTA', 'Compre Aqui', 'Home 2']);">Compre Aqui!</a>
+    
+
+
+
+    
+    <hr class="soften">
+    
+    <h2>Feito especialmente para ajudar você:</h2>
+    <p class="marketing-byline">Não pague imposto de renda a mais ou a menos e fique tranquilo com o Leão.</p>
+
+    <div class="row-fluid">
+      <div class="span4">
+        <img class="marketing-img img-polaroid" src="{{STATIC_URL}}img/diego-wawrzeniak.jpg" alt="diego wawrzeniak">
+        <h3>Criado por um investidor.</h3>
+        <p>Feito por <a href="http://twitter.com/diegowrz">Diego Wawrzeniak</a> co-fundador do <a href="http://www.bussoladoinvestidor.com.br">Bússola do Investidor</a>, este livro virtual é resultado de anos de experiência no assunto.</p>
+      </div>
+      <div class="span4">
+       <img class="marketing-img img-polaroid" src="{{STATIC_URL}}img/ir-acoes.jpg" alt="ir acoes">
+        <h3>Feito para todos.</h3>
+        <p>Para todos os perfis de investidores. Desde de daytraders experientes até quem vai declarar o IR em ações pela primeira vez.</p>
+      </div>
+      <div class="span4">
+        <img class="marketing-img img-polaroid" src="{{STATIC_URL}}img/imposto-de-renda-em-acoes.png" alt="imposto de renda em acoes">
+        <h3>Formato ebook.</h3>
+        <p>Tenha este guia sempre a mão! Disponível no formato PDF e compatível com todos os computadores, tablets e smartphones.</p>
+      </div>
+    </div>
+    <br/>
+    
+    <a href="#comprar" class="btn btn-primary btn-large" onclick="_gaq.push(['_trackEvent', 'CTA', 'Compre Aqui', 'Home 3']);">Compre Aqui!</a>
+    
+    
+
+
+
+<hr class="soften">
+    
+<a name='comprar'></a>
+
+<h1>Promoção de Pré Venda - 70% off!</h1>
+<br/>
+
+<h3>Economize R$ 50 comprando agora  - de R$ 69 por <strong>R$ 19!</strong></h3>
+<br/>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="M884PEMYVL6VW">
+<input type='submit' class='btn btn-success btn-large' value='Comprar agora na Pré Venda por R$ 19' onclick="_gaq.push(['_trackEvent', 'CTA', 'Compre Aqui', 'Form Submit']);"/>
+</form>
+
+<p>ATENÇÃO: Você receberá seu eBook por email <strong>no dia 20/12/2013.</strong></p>
+<br/>
+<br/>
+<img src="{{STATIC_URL}}img/paypal.jpg" alt="PayPal - A maneira mais facil e segura de efetuar pagamentos online!">
+<img src="{{STATIC_URL}}img/site_seguro.png" alt="Site Seguro">
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+{% endblock %}   
